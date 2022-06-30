@@ -71,8 +71,6 @@ a {
       top: -11rem;
       left: 50%;
       transform: translateX(-50%); }
-  .main-container .box-illustration-src {
-    content: url("../assets/images/illustration-box-desktop.svg"); }
   .main-container #box {
     z-index: 1;
     width: 18rem;
