@@ -49,7 +49,7 @@ a {
   box-shadow: 0px 10px 30px -3px rgba(0, 0, 0, 0.4);
   border-radius: 3rem;
   width: 33.5rem;
-  padding: 0 2rem 5rem 2rem;
+  padding: 0 2rem 2.5rem 2rem;
   color: #787887; }
   .main-container .illustration-container {
     height: 13rem; }
@@ -89,33 +89,38 @@ a {
       text-align: center;
       font-weight: bolder;
       margin-bottom: 2.5rem; }
-    .main-container .accordion-container .accordion-field {
+    .main-container .accordion-container .accordion-item button {
+      width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      margin: 1.5rem 0 1.5rem 0; }
-  .main-container .panel {
-    display: none;
-    margin-bottom: 1.5rem;
-    padding-right: 1rem; }
-  .main-container button {
-    width: 1rem;
-    height: 1rem;
-    background-color: transparent;
-    outine-color: transparent;
-    border: none;
-    background-image: url("../assets/images/icon-arrow-down.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    baground-size: cover; }
+      background-color: transparent;
+      outine-color: transparent;
+      border: none;
+      padding: 0;
+      text-align: start;
+      font-family: "Kumbh Sans";
+      color: #4a4b5e;
+      cursor: pointer; }
+      .main-container .accordion-container .accordion-item button:hover {
+        color: #f47c57; }
+    .main-container .accordion-container .accordion-item .panel {
+      display: none;
+      color: #787887;
+      margin: 1.5rem 0 1.5rem 0;
+      padding-right: 1rem; }
+    .main-container .accordion-container .accordion-item .rotate {
+      transform: rotate(180deg); }
 
 /* separator */
 hr {
-  height: 2px;
+  height: 0.15rem;
   border-width: 0;
   color: #e7e7e9;
-  background-color: #e7e7e9; }
+  background-color: #e7e7e9;
+  margin: 1.5rem 0 1.5rem 0; }
 
 @media only screen and (min-width: 1440px) {
   .main-container {

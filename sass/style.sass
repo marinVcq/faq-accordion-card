@@ -6,7 +6,7 @@
 	box-shadow: 0px 10px 30px -3px rgba(0,0,0,0.4)
 	border-radius: 3rem
 	width: 33.5rem
-	padding: 0 2rem 5rem 2rem
+	padding: 0 2rem 2.5rem 2rem
 	color: $dark-grayish-blue
 
 	.illustration-container
@@ -56,32 +56,40 @@
 			font-weight: bolder
 			margin-bottom: 2.5rem
 
-		.accordion-field
-			@include flexbox(row, space-between, center)
-			margin: 1.5rem 0 1.5rem 0
+		.accordion-item
 
-	.panel
-		display: none
-		margin-bottom: 1.5rem
-		padding-right: 1rem
+			button
+				@include width-height(100%, 100%)
+				@include flexbox(row, space-between, center)
+				background-color: transparent
+				outine-color: transparent
+				border: none
+				padding: 0
+				text-align: start
+				font-family: "Kumbh Sans"
+				color: $very-dark-grayish-blue
+				cursor: pointer
 
-	button
-		@include width-height(1rem, 1rem)
-		background-color: transparent
-		outine-color: transparent
-		border: none
-		background-image: url('../assets/images/icon-arrow-down.svg')
-		background-position: center
-		background-repeat: no-repeat
-		baground-size: cover
+				&:hover
+					color: $soft-red
+
+			.panel
+				display: none
+				color: $dark-grayish-blue
+				margin: 1.5rem 0 1.5rem 0
+				padding-right: 1rem
+
+			.rotate
+				transform: rotate(180deg)
 
 /* separator */
 
 hr
-	height: 2px
+	height: 0.15rem
 	border-width: 0
 	color: $light-grayish-blue
-	background-color: $light-grayish-blue 
+	background-color: $light-grayish-blue
+	margin: 1.5rem 0 1.5rem 0
 
 @include respond(desktop)
 	.main-container
