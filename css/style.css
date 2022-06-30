@@ -111,7 +111,8 @@ a {
       margin: 1.5rem 0 1.5rem 0;
       padding-right: 1rem; }
     .main-container .accordion-container .accordion-item .rotate {
-      transform: rotate(180deg); }
+      transform: rotate(180deg);
+      transition: transform 0.5s ease-out; }
     .main-container .accordion-container .accordion-item .selected {
       font-weight: 700; }
 
