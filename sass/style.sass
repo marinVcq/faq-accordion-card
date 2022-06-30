@@ -1,0 +1,127 @@
+@import base/_base.sass
+
+.main-container
+	@include flexbox(column, center, center)
+	background-color: $white
+	box-shadow: 0px 10px 30px -3px rgba(0,0,0,0.4)
+	border-radius: 3rem
+	width: 33.5rem
+	padding: 0 2rem 5rem 2rem
+	color: $dark-grayish-blue
+
+	.illustration-container
+		height: 13rem
+
+		.pattern-src
+			content: url('../assets/images/bg-pattern-mobile.svg')
+
+		.illustration-src
+			content: url('../assets/images/illustration-woman-online-mobile.svg')
+
+		#pattern
+			z-index: 1
+			width: 24rem
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+
+		#illustration
+			z-index: 1
+			width: 24rem
+			position: absolute
+			top: -11rem
+			left: 50%
+			transform: translateX(-50%)
+
+	.box-illustration-src
+		content: url('../assets/images/illustration-box-desktop.svg')
+
+	#box
+		z-index: 1
+		width: 18rem
+		position: absolute
+		top: 19rem
+		left: -9rem
+		display: none
+
+	.accordion-container
+		width: 100%
+
+		#title
+			color: $very-dark-blue-desaturated
+			text-transform: uppercase
+			font-size: 3rem
+			text-align: center
+			font-weight: bolder
+			margin-bottom: 2.5rem
+
+		.accordion-field
+			@include flexbox(row, space-between, center)
+			margin: 1.5rem 0 1.5rem 0
+
+	.panel
+		display: none
+		margin-bottom: 1.5rem
+		padding-right: 1rem
+
+	button
+		@include width-height(1rem, 1rem)
+		background-color: transparent
+		outine-color: transparent
+		border: none
+		background-image: url('../assets/images/icon-arrow-down.svg')
+		background-position: center
+		background-repeat: no-repeat
+		baground-size: cover
+
+/* separator */
+
+hr
+	height: 2px
+	border-width: 0
+	color: $light-grayish-blue
+	background-color: $light-grayish-blue 
+
+@include respond(desktop)
+	.main-container
+		@include flexbox(row,space-between,flex-start)
+		padding: 0
+		width: 98rem
+		min-height: 48rem
+
+		.illustration-container
+			overflow: hidden
+			@include width-height(49rem,48rem)
+
+			.illustration-src
+				content: url('../assets/images/illustration-woman-online-desktop.svg')
+
+			.pattern-src
+				content: url('../assets/images/bg-pattern-desktop.svg')
+
+			#illustration
+				z-index: 1
+				width: 46rem
+				position: absolute
+				top: 6rem
+				left: 14rem
+
+			#pattern
+				z-index: 1
+				width: 87rem
+				position: absolute
+				top: -26rem
+				left: -7rem
+
+		#box
+			display: block
+
+		.accordion-container
+			width: 49rem
+			padding: 6rem 10rem 0 0
+
+			#title
+				text-align: start
+
+
