@@ -102,10 +102,9 @@ a {
       padding: 0;
       text-align: start;
       font-family: "Kumbh Sans";
-      color: #4a4b5e;
-      cursor: pointer; }
-      .main-container .accordion-container .accordion-item button:hover {
-        color: #f47c57; }
+      color: #4a4b5e; }
+      .main-container .accordion-container .accordion-item button p {
+        cursor: pointer; }
     .main-container .accordion-container .accordion-item .panel {
       display: none;
       color: #787887;
@@ -113,6 +112,8 @@ a {
       padding-right: 1rem; }
     .main-container .accordion-container .accordion-item .rotate {
       transform: rotate(180deg); }
+    .main-container .accordion-container .accordion-item .selected {
+      font-weight: 700; }
 
 /* separator */
 hr {
@@ -156,5 +157,7 @@ hr {
     .main-container .accordion-container {
       width: 49rem;
       padding: 6rem 10rem 0 0; }
+      .main-container .accordion-container button:hover {
+        color: #f47c57; }
       .main-container .accordion-container #title {
         text-align: start; } }

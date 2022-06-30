@@ -68,10 +68,9 @@
 				text-align: start
 				font-family: "Kumbh Sans"
 				color: $very-dark-grayish-blue
-				cursor: pointer
-
-				&:hover
-					color: $soft-red
+					
+				p
+					cursor: pointer
 
 			.panel
 				display: none
@@ -81,6 +80,10 @@
 
 			.rotate
 				transform: rotate(180deg)
+
+			.selected
+				font-weight: 700
+
 
 /* separator */
 
@@ -128,6 +131,10 @@ hr
 		.accordion-container
 			width: 49rem
 			padding: 6rem 10rem 0 0
+
+			button
+				&:hover
+					color: $soft-red
 
 			#title
 				text-align: start
