@@ -103,7 +103,7 @@ a {
       text-align: start;
       font-family: "Kumbh Sans";
       color: #4a4b5e; }
-      .main-container .accordion-container .accordion-item button p {
+      .main-container .accordion-container .accordion-item button .acc-label {
         cursor: pointer; }
     .main-container .accordion-container .accordion-item .panel {
       display: none;
